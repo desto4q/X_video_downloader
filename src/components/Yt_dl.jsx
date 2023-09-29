@@ -4,10 +4,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 
-let url = "https://twitter.com/NoContextHumans/status/1707303339459776535";
 
-let vid_url =
-  "https://video.twimg.com/amplify_video/1707105535882072064/vid/avc1/720x804/A2qN0vYj334Bh1L4.mp4?tag=14";
 
 function Yt_dl() {
   const [vid_address, set_address] = useState({});
@@ -40,6 +37,8 @@ function Yt_dl() {
       set_address((vid_address) => media);
       vid.current.load();
     } else {
+      const notify = () => toast.error("Invalid link")
+      notify()
     }
   };
 

@@ -8,6 +8,7 @@ import Card from './components/Card'
 import Footer from './components/Footer'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import nav_links from './data/data'
 
 let Instru = [ 
   {
@@ -35,15 +36,19 @@ function App() {
   document.title ="X video-dl"
   return (
     <div className="app">
-      <ToastContainer/>
+      <ToastContainer />
       <nav>
         <div className="left">
           X video-dl
         </div>
         <div className="right">
-          <a href="#">Link</a>
-          <a href="#">Link</a>
-          <a href="#">Link</a>
+          {nav_links.map(({img,to},key)=> {
+            return (
+              <a href={to} target='_blank' key={key}>
+                <img src={img} alt="" />
+              </a>
+            )
+          })}
         </div>
       </nav>
 
