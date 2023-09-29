@@ -16,7 +16,9 @@ This project was built using a variety of technologies and tools, including:
 
 
 ## Home Page
-![Screenshot 1](./images/home.png)
+![Screenshot 1](https://github.com/desto4q/X_video_downloader/blob/main/images/Home.png?raw=true)
+
+
 
 <!-- > basically the landing page -->
 
